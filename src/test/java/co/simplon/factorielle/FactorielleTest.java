@@ -1,8 +1,9 @@
 package co.simplon.factorielle;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
-import org.junit.BeforeClass;
+import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
@@ -10,7 +11,7 @@ public class FactorielleTest {
 
 	private Factorielle factorielle;
 
-	@BeforeClass
+	@Before
 	public void initialiserUtilitaireFactorielle() {
 		// je peux faire ca car mon objet peut être mutualisé pour tous les
 		// scénarios de test et n'a donc besoin d'être instancié qu'une fois
@@ -56,7 +57,7 @@ public class FactorielleTest {
 		assertTrue(factorielle.calculer(0) == 1);
 	}
 
-	@Ignore
+	@Ignore("test incomplet")
 	@Test
 	public void test_en_cours_de_construction() {
 		// je verrais ca demain
