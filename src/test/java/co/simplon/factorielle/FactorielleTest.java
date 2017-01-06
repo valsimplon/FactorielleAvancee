@@ -62,5 +62,10 @@ public class FactorielleTest {
 	public void test_en_cours_de_construction() {
 		// je verrais ca demain
 	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void factorielle_d_un_nombre_negatif_doit_declencher_une_exception() {
+		factorielle.calculer(-1);
+	}
 
 }
