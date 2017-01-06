@@ -67,5 +67,11 @@ public class FactorielleTest {
 	public void factorielle_d_un_nombre_negatif_doit_declencher_une_exception() {
 		factorielle.calculer(-1);
 	}
+	
+	@Test(timeout=1) 
+	public void factorielle_18_repete_100_fois_doit_sexecuter_en_moints_de_10_ms() {
+		for (int i = 1 ; i<= 100 ; i++)
+			factorielle.calculer(18);
+	}
 
 }
