@@ -1,5 +1,7 @@
 package co.simplon.factorielle;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.core.IsEqual.equalTo;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -72,6 +74,19 @@ public class FactorielleTest {
 	public void factorielle_18_repete_100_fois_doit_sexecuter_en_moints_de_10_ms() {
 		for (int i = 1 ; i<= 100 ; i++)
 			factorielle.calculer(18);
+	}
+	
+	@Test
+	public void factorielle_de_18_doit_renvoyer_6402373705728000_avec_hamcrest() {
+		// GIVEN
+		long entier = 18;
+		long resultatAttendu = 6402373705728000l;
+
+		// WHEN
+		long resultat = factorielle.calculer(entier);
+
+		// THEN
+		assertThat(resultat, equalTo(resultatAttendu));
 	}
 
 }
