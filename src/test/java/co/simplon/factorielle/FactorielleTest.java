@@ -94,5 +94,13 @@ public class FactorielleTest {
 		assertThat(resultat, equalTo(resultatAttendu));
 		assertThat(resultat == resultatAttendu, is(true));
 	}
+	
+	@Test(expected = UnsupportedOperationException.class)
+	public void factorielle_de_20_renvoie_une_exception_aux_limites() {
+		
+		factorielle.calculer(20);
+		
+
+	}
 
 }
