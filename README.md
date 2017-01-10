@@ -2,6 +2,8 @@
 
 # Factorielle Avancée
 
+une nouvelle aventure
+
 Base de code propice à l'écriture de tests unitaires et à la gestion d'exceptions
 
 [Cf. définition Wikipédia](https://fr.wikipedia.org/wiki/Factorielle)
