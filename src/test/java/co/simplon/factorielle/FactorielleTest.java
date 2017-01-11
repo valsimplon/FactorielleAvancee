@@ -1,18 +1,16 @@
 package co.simplon.factorielle;
 
 import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-
-import static org.hamcrest.MatcherAssert.assertThat;
 
 public class FactorielleTest {
 
@@ -94,8 +92,7 @@ public class FactorielleTest {
 
 	}
 	
-	@Ignore
-	@Test
+	@Test(expected = FactorielleUnvailableException.class)
 	public void factorielle_de_21_renvoie_51090942171709440000() throws FactorielleUnvailableException {
 		
 		assertThat(51090942171709440000f == factorielle.calculer(21), is(false));
@@ -103,9 +100,9 @@ public class FactorielleTest {
 	}
 	
 	@Test(expected = FactorielleUnvailableException.class)
-	public void factorielle_de_21_renvoie_une_exception_aux_limites() throws FactorielleUnvailableException {
+	public void factorielle_de_50_renvoie_une_exception_aux_limites() throws FactorielleUnvailableException {
 		
-		factorielle.calculer(21);
+		factorielle.calculer(50);
 		
 
 	}
