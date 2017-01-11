@@ -3,20 +3,20 @@ package co.simplon.factorielle;
 /**
  * Factorielle
  */
-public class Factorielle 
-{
+public class Factorielle {
+
     public Factorielle() {
     		super();
     }
     
-    public long calculer(long n) {
+    public long calculer(long n) throws FactorielleUnvailableException {
     	
     	if (n > 1) {
 			long fact = calculer(n-1);
 			long factn = n*fact;
 			
 			if (factn < fact) {
-				throw new UnsupportedOperationException();
+				throw new FactorielleUnvailableException("La limite de calcul factoriel atteinte");
 			}
 			return factn;
 			
@@ -25,4 +25,5 @@ public class Factorielle
 		}
 		return 1;
     }
+    
 }
