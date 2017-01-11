@@ -1,6 +1,8 @@
-[![Build Status](https://travis-ci.org/simplon-promo-pe-1/FactorielleAvancee.svg?branch=init)](https://travis-ci.org/simplon-promo-pe-1/FactorielleAvancee)
+[![Build Status](https://travis-ci.org/valsimplon/FactorielleAvancee.svg?branch=init)](https://travis-ci.org/valsimplon/FactorielleAvancee)
 
 # Factorielle Avancée
+
+une nouvelle aventure
 
 Base de code propice à l'écriture de tests unitaires et à la gestion d'exceptions
 
