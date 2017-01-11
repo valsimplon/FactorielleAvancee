@@ -67,7 +67,7 @@ public class FactorielleTest {
 	@Ignore("test incomplet")
 	@Test
 	public void test_en_cours_de_construction() {
-		// je verrais ca demain
+		// je verrais ça demain
 	}
 	
 	@Test(expected = IllegalArgumentException.class)
@@ -95,10 +95,24 @@ public class FactorielleTest {
 		assertThat(resultat == resultatAttendu, is(true));
 	}
 	
-	@Test(expected = UnsupportedOperationException.class)
-	public void factorielle_de_20_renvoie_une_exception_aux_limites() {
+	@Test
+	public void factorielle_de_20_renvoie_2432902008176640000() {
 		
-		factorielle.calculer(20);
+		assertThat(2432902008176640000l ==factorielle.calculer(20), is(true));
+
+	}
+	
+	@Test
+	public void factorielle_de_21_renvoie_51090942171709440000() {
+		
+		assertThat(51090942171709440000f ==factorielle.calculer(21), is(false));
+
+	}
+	
+	@Test(expected = UnsupportedOperationException.class)
+	public void factorielle_de_21_renvoie_une_exception_aux_limites() {
+		
+		factorielle.calculer(21);
 		
 
 	}
