@@ -1,6 +1,6 @@
 package co.simplon.factorielle;
 
-public class FactorielleUnvailableException extends java.lang.RuntimeException {
+public class FactorielleUnvailableException extends RuntimeException {
 
 	/**
 	 * 
