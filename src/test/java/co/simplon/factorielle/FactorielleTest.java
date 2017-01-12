@@ -37,6 +37,7 @@ public class FactorielleTest {
 
 	@Test
 	public void factorielle_de_2_doit_renvoyer_2() {
+		Main.main(new String[] {"2"});
 		long resultat = factorielle.calculer(2);
 		assertEquals(2, resultat);
 	}
@@ -54,6 +55,7 @@ public class FactorielleTest {
 
 	@Test
 	public void factorielle_de_0_doit_renvoyer_1() {
+		Main.main(new String[] {"0"});
 		assertTrue(factorielle.calculer(0) == 1);
 		assertFalse(factorielle.calculer(0) != 1);
 	}
@@ -61,6 +63,7 @@ public class FactorielleTest {
 	
 	@Test(expected = IllegalArgumentException.class)
 	public void factorielle_d_un_nombre_negatif_doit_declencher_une_exception() {
+		Main.main(new String[] {"-1"});
 		factorielle.calculer(-1);
 	}
 	
@@ -75,6 +78,8 @@ public class FactorielleTest {
 		// GIVEN
 		long entier = 18;
 		long resultatAttendu = 6402373705728000l;
+		
+		Main.main(new String[] {"18"});
 
 		// WHEN
 		long resultat = factorielle.calculer(entier);
@@ -86,6 +91,7 @@ public class FactorielleTest {
 	
 	@Test
 	public void factorielle_de_20_renvoie_2432902008176640000() {
+		Main.main(new String[] {"20"});
 		assertThat(2432902008176640000l == factorielle.calculer(20), is(true));
 	}
 	
