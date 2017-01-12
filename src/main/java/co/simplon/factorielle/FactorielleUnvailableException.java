@@ -10,7 +10,7 @@ public class FactorielleUnvailableException extends RuntimeException {
 	public FactorielleUnvailableException() {
 		super();
 	}
-		
+
 	public FactorielleUnvailableException(String messageErreur) {
 		super(messageErreur);
 	}
