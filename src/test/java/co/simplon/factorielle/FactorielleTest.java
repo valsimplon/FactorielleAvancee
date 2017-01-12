@@ -121,4 +121,10 @@ public class FactorielleTest {
 		
 		Main.main(new String[] {max_val});
 	}
+	
+	@Test
+	public void appel_main_avec_chaine() {
+		
+		Main.main(new String[] {"aaa"});
+	}	
 }
