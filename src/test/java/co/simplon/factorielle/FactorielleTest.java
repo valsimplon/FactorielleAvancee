@@ -105,7 +105,7 @@ public class FactorielleTest {
 		Main.main(new String[] {"10"});
 	}
 	
-	@Ignore	
+	@Ignore
 	@Test(expected = FactorielleUnvailableException.class)
 	public void appel_main_Max_Value_Integer_Moins_Un() {
 		

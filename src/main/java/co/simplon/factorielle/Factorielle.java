@@ -26,21 +26,4 @@ public class Factorielle {
 		return 1;
     }
 
-    public long conversion(String nombre) {
-    	
-    	long resultatEntier = 0; //"17916881237904312345"
-    	
-    	try {
-    		
-    		resultatEntier = Long.parseLong(nombre);
-        	
-    	} catch (NumberFormatException errFormat) {
-    		
-    		System.out.println("probleme de format " + errFormat.getMessage());
-    	
-    	}
-    
-    	return resultatEntier;
-	}
-     
 }
