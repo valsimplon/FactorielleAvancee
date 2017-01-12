@@ -102,7 +102,8 @@ public class FactorielleTest {
 	
 	@Test(expected = FactorielleUnvailableException.class)
 	public void factorielle_de_50_renvoie_une_exception_aux_limites() {
-		factorielle.calculer(50);
+		Main.main(new String[] {"50"});
+		//factorielle.calculer(50);
 	}
 	
 	@Test
