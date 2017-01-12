@@ -1,5 +1,7 @@
 package co.simplon.factorielle;
 
+import junit.framework.AssertionFailedError;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -97,5 +99,20 @@ public class FactorielleTest {
 	public void factorielle_de_50_renvoie_une_exception_aux_limites() {
 		factorielle.calculer(50);
 	}
+	
+	@Test
+	public void appel_main_Max_Value_Integer_Moins_Un() {
+		
+		String max_val = Long.toString(Integer.MAX_VALUE - 1);
+		
+		Main.main(new String[] {max_val});
+	}
 
+	@Test
+	public void appel_main_Max_Value_Double_Plus_XXX() {
+		
+		String max_val = Double.toString(Double.MAX_VALUE + 10000000000l);
+		
+		Main.main(new String[] {max_val});
+	}
 }
