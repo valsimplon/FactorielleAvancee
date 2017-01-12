@@ -13,19 +13,21 @@ public class Main {
 		try {
 			entier = Long.parseLong(args[0]);
 		} catch (NumberFormatException errFormat) {
-			System.out.println("probleme de format " + errFormat.getMessage());
+			System.out.println(" Cas erreur 2 : probleme de format " + errFormat.getMessage());
 			exit(2);
+		} catch (ArrayIndexOutOfBoundsException errAucunArgument) {
+			System.out.println(" Cas erreur 5 : Aucun argument");
+			exit(5);
 		}
 
 		try {
 			factorielleCalculee = factorielle.calculer(entier);
-			System.out
-					.println("le résultat attendu est " + factorielleCalculee);
+			System.out.println("cas passant - le résultat attendu est " + factorielleCalculee);
 		} catch (FactorielleUnvailableException errFactorielle) {
-			System.out.println(("La limite de calcul factoriel atteinte"));
+			System.out.println(("cas erreur 3 : La limite de calcul factoriel atteinte"));
 			exit(3);
 		} catch (IllegalArgumentException errArg) {
-			System.out.println("l'erreur est un argumement invalide");
+			System.out.println("cas erreur 4 : l'erreur est un argumement invalide");
 			exit(4);
 		}
 	}

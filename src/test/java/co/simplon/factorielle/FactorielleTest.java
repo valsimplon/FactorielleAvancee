@@ -1,17 +1,17 @@
-package co.simplon.factorielle;
+/* package co.simplon.factorielle;
 
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
-//import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import static org.junit.Assert.assertEquals;
-//import static org.junit.Assert.assertFalse;
-//import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class FactorielleTest {
 
@@ -59,14 +59,14 @@ public class FactorielleTest {
 	@Test
 	public void factorielle_de_0_doit_renvoyer_1() {
 		Main.main(new String[] { "0" });
-		// assertTrue(factorielle.calculer(0) == 1);
-		// assertFalse(factorielle.calculer(0) != 1);
+		assertTrue(factorielle.calculer(0) == 1);
+		assertFalse(factorielle.calculer(0) != 1);
 	}
 
 	@Test(expected = IllegalArgumentException.class)
 	public void factorielle_d_un_nombre_negatif_doit_declencher_une_exception() {
 		Main.main(new String[] { "-1" });
-		// factorielle.calculer(-1);
+		factorielle.calculer(-1);
 	}
 
 	@Ignore
@@ -79,24 +79,23 @@ public class FactorielleTest {
 	@Test
 	public void factorielle_de_18_doit_renvoyer_6402373705728000_avec_hamcrest() {
 		// GIVEN
-		// long entier = 18;
-		// long resultatAttendu = 6402373705728000l;
+		long entier = 18;
+		long resultatAttendu = 6402373705728000l;
 
 		Main.main(new String[] { "18" });
 
-		// // WHEN
-		// long resultat = factorielle.calculer(entier);
-		//
-		// // THEN
-		// assertThat(resultat, equalTo(resultatAttendu));
-		// assertThat(resultat == resultatAttendu, is(true));
+		// WHEN
+		long resultat = factorielle.calculer(entier);
+		
+		// THEN
+		assertThat(resultat, equalTo(resultatAttendu));
+		assertThat(resultat == resultatAttendu, is(true));
 	}
 
 	@Test
 	public void factorielle_de_20_renvoie_2432902008176640000() {
 		Main.main(new String[] { "20" });
-		// assertThat(2432902008176640000l == factorielle.calculer(20),
-		// is(true));
+		assertThat(2432902008176640000l == factorielle.calculer(20),is(true));
 	}
 
 	@Ignore
@@ -108,7 +107,7 @@ public class FactorielleTest {
 	@Test(expected = FactorielleUnvailableException.class)
 	public void factorielle_de_50_renvoie_une_exception_aux_limites() {
 		Main.main(new String[] { "50" });
-		// factorielle.calculer(50);
+		factorielle.calculer(50);
 	}
 
 	@Test
@@ -140,3 +139,4 @@ public class FactorielleTest {
 		Main.main(new String[] { "aaa" });
 	}
 }
+*/
