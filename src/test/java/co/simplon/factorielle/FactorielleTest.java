@@ -94,7 +94,6 @@ public class FactorielleTest {
 		assertThat(51090942171709440000f == factorielle.calculer(21), is(false));
 	}
 	
-	@Ignore
 	@Test(expected = FactorielleUnvailableException.class)
 	public void factorielle_de_50_renvoie_une_exception_aux_limites() {
 		factorielle.calculer(50);
@@ -106,7 +105,7 @@ public class FactorielleTest {
 		Main.main(new String[] {"10"});
 	}
 	
-	
+	@Ignore	
 	@Test(expected = FactorielleUnvailableException.class)
 	public void appel_main_Max_Value_Integer_Moins_Un() {
 		
