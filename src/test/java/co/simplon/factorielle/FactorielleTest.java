@@ -1,8 +1,7 @@
 package co.simplon.factorielle;
 
-import junit.framework.AssertionFailedError;
-
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -95,15 +94,23 @@ public class FactorielleTest {
 		assertThat(51090942171709440000f == factorielle.calculer(21), is(false));
 	}
 	
+	@Ignore
 	@Test(expected = FactorielleUnvailableException.class)
 	public void factorielle_de_50_renvoie_une_exception_aux_limites() {
 		factorielle.calculer(50);
 	}
 	
 	@Test
+	public void appel_main_de_10() {
+		
+		Main.main(new String[] {"10"});
+	}
+	
+	
+	@Test(expected = FactorielleUnvailableException.class)
 	public void appel_main_Max_Value_Integer_Moins_Un() {
 		
-		String max_val = Long.toString(Integer.MAX_VALUE - 1);
+		String max_val = Integer.toString(Integer.MAX_VALUE - 1);
 		
 		Main.main(new String[] {max_val});
 	}

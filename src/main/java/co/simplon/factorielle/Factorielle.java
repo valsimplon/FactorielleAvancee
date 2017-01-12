@@ -1,6 +1,5 @@
 package co.simplon.factorielle;
 
-import java.lang.Math.*;
 /**
  * Factorielle
  */
