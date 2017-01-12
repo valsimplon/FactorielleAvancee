@@ -14,7 +14,7 @@ public class Main {
 			entier = Long.parseLong(args[0]);
 		} catch (NumberFormatException errFormat) {
 			System.out.println("probleme de format " + errFormat.getMessage());
-			java.lang.System.exit(0);
+			exit(2);
 		}
 		
 		try {
@@ -22,10 +22,10 @@ public class Main {
 			System.out.println("le résultat attendu est " + factorielleCalculee);
 		} catch (FactorielleUnvailableException errFactorielle) {
 			System.out.println(("La limite de calcul factoriel atteinte"));
-			exit(0);
+			exit(3);
 		} catch (IllegalArgumentException errArg) {
 			System.out.println("l'erreur est un argumement invalide");
-			java.lang.System.exit(0);
+			exit(4);
 		} 
 	}
 
