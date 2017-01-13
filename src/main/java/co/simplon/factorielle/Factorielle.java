@@ -9,7 +9,8 @@ public class Factorielle {
 		super();
 	}
 
-	public long calculer(long n) {
+	public long calculer(long n) throws FactorielleUnvailableException,
+	IllegalArgumentException {
 
 		if (n > 1) {
 			long fact = calculer(n - 1);
