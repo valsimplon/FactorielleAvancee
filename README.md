@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/valsimplon/FactorielleAvancee.svg?branch=etape2)](https://travis-ci.org/valsimplon/FactorielleAvancee)
+[![Build Status](https://travis-ci.org/valsimplon/FactorielleAvancee.svg?branch=etape3)](https://travis-ci.org/valsimplon/FactorielleAvancee)
 
 # Factorielle Avancée
 
